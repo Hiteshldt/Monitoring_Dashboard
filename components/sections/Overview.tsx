@@ -46,7 +46,7 @@ export default function Overview({ data }: OverviewProps) {
         <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
           <div className="flex items-center justify-between">
             <div className="flex-1">
-              <p className="text-xs text-gray-500 uppercase font-medium mb-1.5">Water pH</p>
+              <p className="text-xs text-gray-500 uppercase font-medium mb-1.5">pH</p>
               <p className="text-2xl font-bold text-purple-600">{data.main.ph}</p>
             </div>
             <div className="w-11 h-11 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
