@@ -29,11 +29,13 @@ export default function Sidebar({ activeTab, setActiveTab, deviceId, onLogout }:
     <div className="w-64 bg-slate-800 text-white flex flex-col">
       <div className="p-4 border-b border-slate-700">
         <div className="mb-3">
-          <img
-            src="/logo.png"
-            alt="Carbelim Logo"
-            className="h-8 w-auto object-contain"
-          />
+          <div className="bg-white p-2 rounded inline-block">
+            <img
+              src="/logo.png"
+              alt="Carbelim Logo"
+              className="h-8 w-auto object-contain"
+            />
+          </div>
         </div>
         <p className="text-xs text-slate-400">{deviceId}</p>
       </div>

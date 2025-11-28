@@ -33,12 +33,14 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-900">
       <div className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="mb-6">
-            <img
-              src="/logo.png"
-              alt="Carbelim Logo"
-              className="h-12 w-auto object-contain mx-auto"
-            />
+          <div className="mb-6 flex justify-center">
+            <div className="bg-white p-3 rounded-lg">
+              <img
+                src="/logo.png"
+                alt="Carbelim Logo"
+                className="h-12 w-auto object-contain"
+              />
+            </div>
           </div>
           <h1 className="text-xl font-bold text-gray-800">Environmental Monitoring</h1>
           <p className="text-sm text-gray-500 mt-1">Dashboard Login</p>
