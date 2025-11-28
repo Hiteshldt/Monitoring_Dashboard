@@ -20,7 +20,7 @@ const menuItems = [
   { id: 'overview', label: 'Overview', icon: LayoutDashboard },
   { id: 'sensors', label: 'Sensors', icon: Gauge },
   { id: 'impact', label: 'Impact', icon: TrendingUp },
-  { id: 'relays', label: 'Relay Control', icon: Power },
+  { id: 'relays', label: 'Automation', icon: Power },
   { id: 'analytics', label: 'Analytics', icon: BarChart3 },
 ]
 
@@ -28,8 +28,14 @@ export default function Sidebar({ activeTab, setActiveTab, deviceId, onLogout }:
   return (
     <div className="w-64 bg-slate-800 text-white flex flex-col">
       <div className="p-4 border-b border-slate-700">
-        <h1 className="text-base font-bold">Monitoring Dashboard</h1>
-        <p className="text-xs text-slate-400 mt-0.5">{deviceId}</p>
+        <div className="mb-3">
+          <img
+            src="/logo.png"
+            alt="Carbelim Logo"
+            className="h-8 w-auto object-contain"
+          />
+        </div>
+        <p className="text-xs text-slate-400">{deviceId}</p>
       </div>
 
       <nav className="flex-1 p-2">
